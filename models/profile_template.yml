@@ -1,0 +1,22 @@
+fixed:
+  account: dvuk-development
+  authenticator: externalbrowser
+  type: snowflake
+  warehouse: SANDBOX_XS
+  threads: 4
+  query_tag: automate-dv-cli-dev
+  client_session_keep_alive: false
+
+prompts:
+  user:
+    type: string
+    hint: "Your name, FIRSTNAME_SURNAME"
+  role:
+    type: string
+    hint: "Your name, FIRSTNAME_SURNAME"
+  schema:
+    type: string
+    hint: "Your name, FIRSTNAME_SURNAME"
+  database:
+    type: string
+    hint: "Your name, FIRSTNAME_SURNAME"
