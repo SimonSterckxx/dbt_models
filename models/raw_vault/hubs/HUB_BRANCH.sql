@@ -1,6 +1,6 @@
-{%- set source_model = "stg_dqtestresults" -%}
-{%- set src_pk = "DQTESTRESULTS_HK" -%}
-{%- set src_nk = "DQTESTRESULTS_BK" -%}
+{%- set source_model = "stg_branch" -%}
+{%- set src_pk = "BRANCH_HK" -%}
+{%- set src_nk = "BRANCH_BK" -%}
 {%- set src_ldts = "load_date" -%}
 {%- set src_source = "record_source" -%}
 

@@ -1,7 +1,7 @@
-{%- set source_model = "stg_sat_dql_ref_objects" -%}
-{%- set src_pk = "DQ_LANDING_HK" -%}
-{%- set src_payload = ["SCHEMA_NAME", "OBJECT_TYPE"] -%}
-{%- set src_hashdiff = "SAT_DQL_REF_OBJECTS_HASHDIFF" -%}
+{%- set source_model = "stg_sat_bk_currency" -%}
+{%- set src_pk = "BANKING_HK" -%}
+{%- set src_payload = ["CURRENCY_NAME"] -%}
+{%- set src_hashdiff = "SAT_BK_CURRENCY_HASHDIFF" -%}
 {%- set src_ldts = "load_date" -%}
 {%- set src_source = "record_source" -%}
 

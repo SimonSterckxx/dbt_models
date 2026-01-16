@@ -1,6 +1,6 @@
-{%- set source_model = "stg_dqloads" -%}
-{%- set src_pk = "DQLOADS_HK" -%}
-{%- set src_nk = "DQLOADS_BK" -%}
+{%- set source_model = "stg_account" -%}
+{%- set src_pk = "ACCOUNT_HK" -%}
+{%- set src_nk = "ACCOUNT_BK" -%}
 {%- set src_ldts = "load_date" -%}
 {%- set src_source = "record_source" -%}
 

@@ -1,6 +1,6 @@
-{%- set source_model = "stg_lnk_dqtestruns_dqloads" -%}
-{%- set src_pk = "LNK_DQTESTRUNS_DQLOADS_HK" -%}
-{%- set src_fk = ["LNK_DQTESTRUNS_DQLOADS_FK1_HK", "LNK_DQTESTRUNS_DQLOADS_FK2_HK"] -%}
+{%- set source_model = "stg_lnk_partyaddress_party" -%}
+{%- set src_pk = "LNK_PARTYADDRESS_PARTY_HK" -%}
+{%- set src_fk = ["LNK_PARTYADDRESS_PARTY_FK1_HK", "LNK_PARTYADDRESS_PARTY_FK2_HK"] -%}
 {%- set src_ldts = "load_date" -%}
 {%- set src_source = "record_source" -%}
 

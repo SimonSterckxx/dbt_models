@@ -1,6 +1,6 @@
-{%- set source_model = "stg_lnk_dqtestresults_dqtestruns" -%}
-{%- set src_pk = "LNK_DQTESTRESULTS_DQTESTRUNS_HK" -%}
-{%- set src_fk = ["LNK_DQTESTRESULTS_DQTESTRUNS_FK1_HK", "LNK_DQTESTRESULTS_DQTESTRUNS_FK2_HK"] -%}
+{%- set source_model = "stg_lnk_account_currency" -%}
+{%- set src_pk = "LNK_ACCOUNT_CURRENCY_HK" -%}
+{%- set src_fk = ["LNK_ACCOUNT_CURRENCY_FK1_HK", "LNK_ACCOUNT_CURRENCY_FK2_HK"] -%}
 {%- set src_ldts = "load_date" -%}
 {%- set src_source = "record_source" -%}
 

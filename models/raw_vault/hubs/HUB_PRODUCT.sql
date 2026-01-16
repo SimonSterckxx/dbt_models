@@ -1,6 +1,6 @@
-{%- set source_model = "stg_refdqtests" -%}
-{%- set src_pk = "REFDQTESTS_HK" -%}
-{%- set src_nk = "REFDQTESTS_BK" -%}
+{%- set source_model = "stg_product" -%}
+{%- set src_pk = "PRODUCT_HK" -%}
+{%- set src_nk = "PRODUCT_BK" -%}
 {%- set src_ldts = "load_date" -%}
 {%- set src_source = "record_source" -%}
 

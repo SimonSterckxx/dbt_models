@@ -1,6 +1,6 @@
-{%- set source_model = "stg_refobjects" -%}
-{%- set src_pk = "REFOBJECTS_HK" -%}
-{%- set src_nk = "REFOBJECTS_BK" -%}
+{%- set source_model = "stg_party" -%}
+{%- set src_pk = "PARTY_HK" -%}
+{%- set src_nk = "PARTY_BK" -%}
 {%- set src_ldts = "load_date" -%}
 {%- set src_source = "record_source" -%}
 

@@ -1,6 +1,6 @@
-{%- set source_model = "stg_lnk_dqtestresults_refobjects" -%}
-{%- set src_pk = "LNK_DQTESTRESULTS_REFOBJECTS_HK" -%}
-{%- set src_fk = ["LNK_DQTESTRESULTS_REFOBJECTS_FK1_HK", "LNK_DQTESTRESULTS_REFOBJECTS_FK2_HK"] -%}
+{%- set source_model = "stg_lnk_accountholder_party" -%}
+{%- set src_pk = "LNK_ACCOUNTHOLDER_PARTY_HK" -%}
+{%- set src_fk = ["LNK_ACCOUNTHOLDER_PARTY_FK1_HK", "LNK_ACCOUNTHOLDER_PARTY_FK2_HK"] -%}
 {%- set src_ldts = "load_date" -%}
 {%- set src_source = "record_source" -%}
 

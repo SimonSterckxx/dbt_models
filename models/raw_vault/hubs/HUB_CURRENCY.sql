@@ -1,6 +1,6 @@
-{%- set source_model = "stg_dqtestruns" -%}
-{%- set src_pk = "DQTESTRUNS_HK" -%}
-{%- set src_nk = "DQTESTRUNS_BK" -%}
+{%- set source_model = "stg_currency" -%}
+{%- set src_pk = "CURRENCY_HK" -%}
+{%- set src_nk = "CURRENCY_BK" -%}
 {%- set src_ldts = "load_date" -%}
 {%- set src_source = "record_source" -%}
 

@@ -1,7 +1,9 @@
-{%- set source_model = "stg_sat_dql_dq_loads" -%}
-{%- set src_pk = "DQ_LANDING_HK" -%}
-{%- set src_payload = ["STARTED_AT", "ENDED_AT"] -%}
-{%- set src_hashdiff = "SAT_DQL_DQ_LOADS_HASHDIFF" -%}
+{%- set source_model = "stg_sat_bk_party" -%}
+{%- set src_pk = "BANKING_HK" -%}
+{%- set src_payload = ["PARTY_NUMBER", "PARTY_TYPE", "FULL_NAME",
+                       "DATE_OF_BIRTH", "EMAIL", "PHONE",
+                       "CREATED_AT", "UPDATED_AT"] -%}
+{%- set src_hashdiff = "SAT_BK_PARTY_HASHDIFF" -%}
 {%- set src_ldts = "load_date" -%}
 {%- set src_source = "record_source" -%}
 
