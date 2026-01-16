@@ -1,0 +1,7 @@
+version: 1
+
+raw_vault:
+  ref_tables:
+    - model_name: ref_nation
+      src_pk: NATION_ID
+      source_model: stg_customer
