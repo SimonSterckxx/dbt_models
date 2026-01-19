@@ -1,8 +1,8 @@
 {%- set source_model = "stg_refobjects" -%}
 {%- set src_pk = "REFOBJECTS_HK" -%}
-{%- set src_nk = "REFOBJECTS_BK" -%}
-{%- set src_ldts = "load_date" -%}
-{%- set src_source = "record_source" -%}
+{%- set src_nk = "OBJ_NAME_BK" -%}
+{%- set src_ldts = "LOAD_DATETIME" -%}
+{%- set src_source = "RECORD_SOURCE" -%}
 
 {{ automate_dv.hub(source_model=source_model,
                    src_pk=src_pk,
