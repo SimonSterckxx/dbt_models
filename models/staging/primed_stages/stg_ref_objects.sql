@@ -1,5 +1,5 @@
 {%- set yaml_metadata -%}
-source_model: raw_ref_objects
+source_model: ref_objects
 derived_columns:
   RECORD_SOURCE: '!STG_REF_OBJECTS'
   LOAD_DATETIME: load_date

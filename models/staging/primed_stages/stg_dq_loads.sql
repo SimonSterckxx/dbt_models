@@ -1,5 +1,5 @@
 {%- set yaml_metadata -%}
-source_model: raw_dq_loads
+source_model: dq_loads
 derived_columns:
   RECORD_SOURCE: '!STG_DQ_LOADS'
   LOAD_DATETIME: load_date
