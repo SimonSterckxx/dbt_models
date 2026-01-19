@@ -1,8 +1,8 @@
-{%- set source_model = "stg_dq_test_runs" -%}
+{%- set source_model = "stg_dqtestruns" -%}
 {%- set src_pk = "DQTESTRUNS_HK" -%}
-{%- set src_nk = "ID_BK" -%}
-{%- set src_ldts = "LOAD_DATETIME" -%}
-{%- set src_source = "RECORD_SOURCE" -%}
+{%- set src_nk = "DQTESTRUNS_BK" -%}
+{%- set src_ldts = "load_date" -%}
+{%- set src_source = "record_source" -%}
 
 {{ automate_dv.hub(source_model=source_model,
                    src_pk=src_pk,

@@ -1,8 +1,8 @@
-{%- set source_model = "stg_dq_test_runs" -%}
+{%- set source_model = "stg_lnk_dqtestruns_dqloads" -%}
 {%- set src_pk = "LNK_DQTESTRUNS_DQLOADS_HK" -%}
-{%- set src_fk = ["dqtestruns_HK", "dqloads_HK"] -%}
-{%- set src_ldts = "LOAD_DATETIME" -%}
-{%- set src_source = "RECORD_SOURCE" -%}
+{%- set src_fk = ["LNK_DQTESTRUNS_DQLOADS_FK1_HK", "LNK_DQTESTRUNS_DQLOADS_FK2_HK"] -%}
+{%- set src_ldts = "load_date" -%}
+{%- set src_source = "record_source" -%}
 
 {{ automate_dv.link(source_model=source_model,
                     src_pk=src_pk,
