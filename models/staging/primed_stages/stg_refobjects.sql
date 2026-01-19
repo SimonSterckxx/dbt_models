@@ -9,7 +9,7 @@ hashed_columns:
     columns:
       - SCHEMA_NAME
       - OBJECT_TYPE
-  ref_objects_HK: ref_objects_BK
+  REFOBJECTS_HK: REFOBJECTS_BK
 {%- endset -%}
 
 {% set metadata_dict = fromyaml(yaml_metadata) %}

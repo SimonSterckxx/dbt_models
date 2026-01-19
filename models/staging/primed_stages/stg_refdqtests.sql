@@ -9,7 +9,7 @@ hashed_columns:
     columns:
       - TEST_NAME
       - TEST_QUERY
-  ref_dq_tests_HK: ref_dq_tests_BK
+  REFDQTESTS_HK: REFDQTESTS_BK
 {%- endset -%}
 
 {% set metadata_dict = fromyaml(yaml_metadata) %}

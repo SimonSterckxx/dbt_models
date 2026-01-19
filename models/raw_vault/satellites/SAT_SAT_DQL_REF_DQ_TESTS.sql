@@ -1,5 +1,5 @@
-{%- set source_model = "stg_ref_dq_tests" -%}
-{%- set src_pk = "ref_dq_tests_HK" -%}
+{%- set source_model = "stg_refdqtests" -%}
+{%- set src_pk = "REFDQTESTS_HK" -%}
 {%- set src_payload = ["TEST_NAME", "TEST_QUERY"] -%}
 {%- set src_hashdiff = "SAT_DQL_REF_DQ_TESTS_HASHDIFF" -%}
 {%- set src_ldts = "LOAD_DATETIME" -%}

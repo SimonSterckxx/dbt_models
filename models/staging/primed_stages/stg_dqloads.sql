@@ -9,7 +9,7 @@ hashed_columns:
     columns:
       - STARTED_AT
       - ENDED_AT
-  dq_loads_HK: dq_loads_BK
+  DQLOADS_HK: DQLOADS_BK
   LNK_DQTESTRUNS_DQLOADS_HK:
     - dqtestruns_HK
     - dqloads_HK

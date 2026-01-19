@@ -14,7 +14,7 @@ hashed_columns:
       - RESULT
       - USED_LOAD_CYCLE_ID
       - RECORD_SOURCE
-  dq_test_results_HK: dq_test_results_BK
+  DQTESTRESULTS_HK: DQTESTRESULTS_BK
   LNK_DQTESTRESULTS_DQTESTRUNS_HK:
     - dqtestresults_HK
     - dqtestruns_HK
