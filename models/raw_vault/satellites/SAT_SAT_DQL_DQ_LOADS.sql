@@ -1,4 +1,4 @@
-{%- set source_model = "stg_dqloads" -%}
+{%- set source_model = "stg_dq_loads" -%}
 {%- set src_pk = "DQLOADS_HK" -%}
 {%- set src_payload = ["STARTED_AT", "ENDED_AT"] -%}
 {%- set src_hashdiff = "SAT_DQL_DQ_LOADS_HASHDIFF" -%}

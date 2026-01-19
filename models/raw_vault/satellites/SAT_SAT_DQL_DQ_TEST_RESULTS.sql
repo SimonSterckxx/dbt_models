@@ -1,4 +1,4 @@
-{%- set source_model = "stg_dqtestresults" -%}
+{%- set source_model = "stg_dq_test_results" -%}
 {%- set src_pk = "DQTESTRESULTS_HK" -%}
 {%- set src_payload = ["FK_TEST_RUNS_ID", "FK_OBJ_NAME", "FK_TEST_CODE",
                        "OCCURRENCES", "RESULT", "USED_LOAD_CYCLE_ID",

@@ -1,4 +1,4 @@
-{%- set source_model = "stg_dqtestresults" -%}
+{%- set source_model = "stg_dq_test_results" -%}
 {%- set src_pk = "DQTESTRESULTS_HK" -%}
 {%- set src_nk = "ID_BK" -%}
 {%- set src_ldts = "LOAD_DATETIME" -%}

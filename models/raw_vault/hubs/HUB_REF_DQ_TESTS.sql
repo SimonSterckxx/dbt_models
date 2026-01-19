@@ -1,4 +1,4 @@
-{%- set source_model = "stg_refdqtests" -%}
+{%- set source_model = "stg_ref_dq_tests" -%}
 {%- set src_pk = "REFDQTESTS_HK" -%}
 {%- set src_nk = "TEST_CODE_BK" -%}
 {%- set src_ldts = "LOAD_DATETIME" -%}

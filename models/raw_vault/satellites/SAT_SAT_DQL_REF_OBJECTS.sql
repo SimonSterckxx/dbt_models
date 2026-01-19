@@ -1,4 +1,4 @@
-{%- set source_model = "stg_refobjects" -%}
+{%- set source_model = "stg_ref_objects" -%}
 {%- set src_pk = "REFOBJECTS_HK" -%}
 {%- set src_payload = ["SCHEMA_NAME", "OBJECT_TYPE"] -%}
 {%- set src_hashdiff = "SAT_DQL_REF_OBJECTS_HASHDIFF" -%}
