@@ -2,7 +2,7 @@
 source_model: dq_loads
 derived_columns:
   RECORD_SOURCE: '!STG_DQ_LOADS'
-  LOAD_DATETIME: load_date
+  LOAD_DATETIME: CURRENT_TIMESTAMP()
 hashed_columns:
   SAT_DQL_DQ_LOADS_HASHDIFF:
     is_hashdiff: true

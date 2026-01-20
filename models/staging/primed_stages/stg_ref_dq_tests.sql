@@ -2,7 +2,7 @@
 source_model: ref_dq_tests
 derived_columns:
   RECORD_SOURCE: '!STG_REF_DQ_TESTS'
-  LOAD_DATETIME: load_date
+  LOAD_DATETIME: CURRENT_TIMESTAMP()
 hashed_columns:
   SAT_DQL_REF_DQ_TESTS_HASHDIFF:
     is_hashdiff: true

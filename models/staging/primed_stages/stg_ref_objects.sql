@@ -2,7 +2,7 @@
 source_model: ref_objects
 derived_columns:
   RECORD_SOURCE: '!STG_REF_OBJECTS'
-  LOAD_DATETIME: load_date
+  LOAD_DATETIME: CURRENT_TIMESTAMP()
 hashed_columns:
   SAT_DQL_REF_OBJECTS_HASHDIFF:
     is_hashdiff: true
