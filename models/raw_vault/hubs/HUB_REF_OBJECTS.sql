@@ -1,6 +1,6 @@
 {%- set source_model = "stg_ref_objects" -%}
 {%- set src_pk = "REFOBJECTS_HK" -%}
-{%- set src_nk = "OBJ_NAME_BK" -%}
+{%- set src_nk = "OBJ" -%}
 {%- set src_ldts = "LOAD_DATETIME" -%}
 {%- set src_source = "RECORD_SOURCE" -%}
 
