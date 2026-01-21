@@ -14,7 +14,7 @@ bridge_walk:
     eff_sat_table: EFF_SAT_LNK_DQTESTRUNS_DQLOADS
     eff_sat_pk: LNK_DQTESTRUNS_DQLOADS_PK
     eff_sat_end_date: END_DATE
-    eff_sat_load_date: load_date
+    eff_sat_load_date: load_datetime
   LNK_DQTESTRESULTS_DQTESTRUNS:
     bridge_link_pk: LNK_DQTESTRESULTS_DQTESTRUNS_PK
     bridge_end_date: EFF_SAT_LNK_DQTESTRESULTS_DQTESTRUNS_ENDDATE
@@ -26,7 +26,7 @@ bridge_walk:
     eff_sat_table: EFF_SAT_LNK_DQTESTRESULTS_DQTESTRUNS
     eff_sat_pk: LNK_DQTESTRESULTS_DQTESTRUNS_PK
     eff_sat_end_date: END_DATE
-    eff_sat_load_date: load_date
+    eff_sat_load_date: load_datetime
   LNK_DQTESTRESULTS_REFDQTESTS:
     bridge_link_pk: LNK_DQTESTRESULTS_REFDQTESTS_PK
     bridge_end_date: EFF_SAT_LNK_DQTESTRESULTS_REFDQTESTS_ENDDATE
@@ -38,7 +38,7 @@ bridge_walk:
     eff_sat_table: EFF_SAT_LNK_DQTESTRESULTS_REFDQTESTS
     eff_sat_pk: LNK_DQTESTRESULTS_REFDQTESTS_PK
     eff_sat_end_date: END_DATE
-    eff_sat_load_date: load_date
+    eff_sat_load_date: load_datetime
   LNK_DQTESTRESULTS_REFOBJECTS:
     bridge_link_pk: LNK_DQTESTRESULTS_REFOBJECTS_PK
     bridge_end_date: EFF_SAT_LNK_DQTESTRESULTS_REFOBJECTS_ENDDATE
@@ -50,13 +50,13 @@ bridge_walk:
     eff_sat_table: EFF_SAT_LNK_DQTESTRESULTS_REFOBJECTS
     eff_sat_pk: LNK_DQTESTRESULTS_REFOBJECTS_PK
     eff_sat_end_date: END_DATE
-    eff_sat_load_date: load_date
+    eff_sat_load_date: load_datetime
 stage_tables_ldts:
-  STG_LNK_DQTESTRUNS_DQLOADS: load_date
-  STG_LNK_DQTESTRESULTS_DQTESTRUNS: load_date
-  STG_LNK_DQTESTRESULTS_REFDQTESTS: load_date
-  STG_LNK_DQTESTRESULTS_REFOBJECTS: load_date
-src_ldts: load_date
+  STG_LNK_DQTESTRUNS_DQLOADS: load_datetime
+  STG_LNK_DQTESTRESULTS_DQTESTRUNS: load_datetime
+  STG_LNK_DQTESTRESULTS_REFDQTESTS: load_datetime
+  STG_LNK_DQTESTRESULTS_REFOBJECTS: load_datetime
+src_ldts: load_datetime
 {%- endset -%}
 
 {% set metadata_dict = fromyaml(yaml_metadata) %}

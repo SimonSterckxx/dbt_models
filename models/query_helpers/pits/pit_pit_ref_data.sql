@@ -7,10 +7,10 @@ satellites:
     pk:
       PK: REFOBJECTS_HK
     ldts:
-      LDTS: load_date
+      LDTS: load_datetime
 stage_tables_ldts:
-  STG_HUB_REF_OBJECTS: load_date
-src_ldts: load_date
+  STG_HUB_REF_OBJECTS: load_datetime
+src_ldts: load_datetime
 {%- endset -%}
 
 {% set metadata_dict = fromyaml(yaml_metadata) %}
