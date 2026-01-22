@@ -1,0 +1,11 @@
+version: 2
+sources:
+- name: SDQV
+  database: MARDIROSG
+  schema: DQ_SOURCE
+  tables:
+  - name: DQ_LOADS
+  - name: DQ_TEST_RESULTS
+  - name: DQ_TEST_RUNS
+  - name: REF_DQ_TESTS
+  - name: REF_OBJECTS
