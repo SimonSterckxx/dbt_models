@@ -9,7 +9,7 @@ satellites:
     ldts:
       LDTS: load_datetime
 stage_tables_ldts:
-  STG_HUB_REF_OBJECTS: load_datetime
+  stg_hub_ref_objects: load_datetime
 src_ldts: load_datetime
 {%- endset -%}
 

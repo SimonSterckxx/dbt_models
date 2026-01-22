@@ -52,10 +52,7 @@ bridge_walk:
     eff_sat_end_date: END_DATE
     eff_sat_load_date: load_datetime
 stage_tables_ldts:
-  STG_LNK_DQTESTRUNS_DQLOADS: load_datetime
-  STG_LNK_DQTESTRESULTS_DQTESTRUNS: load_datetime
-  STG_LNK_DQTESTRESULTS_REFDQTESTS: load_datetime
-  STG_LNK_DQTESTRESULTS_REFOBJECTS: load_datetime
+  stg_lnk: load_datetime
 src_ldts: load_datetime
 {%- endset -%}
 
