@@ -1,9 +1,11 @@
 {%- set yaml_metadata -%}
-source_model: dq_test_runs
+source_model:
+  SDQV: DQ_TEST_RUNS
 derived_columns:
   RECORD_SOURCE: '!STG_DQ_TEST_RUNS'
   LOAD_DATETIME: CURRENT_TIMESTAMP()
 hashed_columns:
+  DQTESTRUNS_HK: ID
   SAT_DQL_DQ_TEST_RUNS_HASHDIFF:
     is_hashdiff: true
     columns:
@@ -13,7 +15,10 @@ hashed_columns:
       - ENDED_AT
       - STATUS
       - FK_DQ_LOAD_ID
-  DQTESTRUNS_HK: DQTESTRUNS_BK
+  LNK_DQTESTRUNS_DQLOADS_HK:
+    - DQTESTRUNS_HK
+    - DQLOADS_HK
+  DQLOADS_HK: DQLOADS_BK
 {%- endset -%}
 
 {% set metadata_dict = fromyaml(yaml_metadata) %}

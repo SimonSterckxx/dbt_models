@@ -1,15 +1,16 @@
 {%- set yaml_metadata -%}
-source_model: ref_dq_tests
+source_model:
+  SDQV: REF_DQ_TESTS
 derived_columns:
   RECORD_SOURCE: '!STG_REF_DQ_TESTS'
   LOAD_DATETIME: CURRENT_TIMESTAMP()
 hashed_columns:
+  REFDQTESTS_HK: TEST_CODE
   SAT_DQL_REF_DQ_TESTS_HASHDIFF:
     is_hashdiff: true
     columns:
       - TEST_NAME
       - TEST_QUERY
-  REFDQTESTS_HK: REFDQTESTS_BK
 {%- endset -%}
 
 {% set metadata_dict = fromyaml(yaml_metadata) %}

@@ -1,6 +1,6 @@
 {%- set source_model = "stg_dq_test_results" -%}
 {%- set src_pk = "LNK_DQTESTRESULTS_REFDQTESTS_HK" -%}
-{%- set src_fk = ["dqtestresults_HK", "refdqtests_HK"] -%}
+{%- set src_fk = ["DQTESTRESULTS_HK", "REFDQTESTS_HK"] -%}
 {%- set src_ldts = "LOAD_DATETIME" -%}
 {%- set src_source = "RECORD_SOURCE" -%}
 

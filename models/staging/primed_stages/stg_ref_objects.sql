@@ -1,15 +1,16 @@
 {%- set yaml_metadata -%}
-source_model: ref_objects
+source_model:
+  SDQV: REF_OBJECTS
 derived_columns:
   RECORD_SOURCE: '!STG_REF_OBJECTS'
   LOAD_DATETIME: CURRENT_TIMESTAMP()
 hashed_columns:
+  REFOBJECTS_HK: OBJ_NAME
   SAT_DQL_REF_OBJECTS_HASHDIFF:
     is_hashdiff: true
     columns:
       - SCHEMA_NAME
       - OBJECT_TYPE
-  REFOBJECTS_HK: REFOBJECTS_BK
 {%- endset -%}
 
 {% set metadata_dict = fromyaml(yaml_metadata) %}
