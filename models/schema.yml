@@ -2,7 +2,7 @@ version: 2
 sources:
 - name: SDQV
   database: MARDIROSG
-  schema: DQ_SOURCE
+  schema: DQ_LOAD
   tables:
   - name: DQ_LOADS
   - name: DQ_TEST_RESULTS

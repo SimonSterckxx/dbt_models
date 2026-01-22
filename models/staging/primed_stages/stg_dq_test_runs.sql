@@ -15,10 +15,10 @@ hashed_columns:
       - ENDED_AT
       - STATUS
       - FK_DQ_LOAD_ID
-  LNK_DQTESTRUNS_DQLOADS_HK:
-    - DQTESTRUNS_HK
-    - DQLOADS_HK
   DQLOADS_HK: DQLOADS_BK
+  LNK_DQTESTRUNS_DQLOADS_HK:
+    - DQTESTRUNS_BK
+    - DQLOADS_BK
 {%- endset -%}
 
 {% set metadata_dict = fromyaml(yaml_metadata) %}
