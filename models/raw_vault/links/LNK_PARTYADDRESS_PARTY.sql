@@ -1,6 +1,6 @@
 {%- set source_model = "stg_party_address" -%}
 {%- set src_pk = "LNK_PARTYADDRESS_PARTY_HK" -%}
-{%- set src_fk = ["PARTYADDRESS_HK", "PARTY_HK"] -%}
+{%- set src_fk = ["partyaddress_HK", "party_HK"] -%}
 {%- set src_ldts = "LOAD_DATETIME" -%}
 {%- set src_source = "RECORD_SOURCE" -%}
 

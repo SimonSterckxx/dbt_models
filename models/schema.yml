@@ -1,14 +1,11 @@
 version: 2
 sources:
 - name: BK
-  database: GILLESL
+  database: AUTOMATE_DV_DBT_DEMO
   schema: BANKING_DEMO
   tables:
-  - name: ACCOUNT
-  - name: ACCOUNT_HOLDER
-  - name: BANK_TRANSACTION
-  - name: BRANCH
-  - name: CURRENCY
-  - name: PARTY
-  - name: PARTY_ADDRESS
-  - name: PRODUCT
+  - name: DQ_LOADS
+  - name: DQ_TEST_RESULTS
+  - name: DQ_TEST_RUNS
+  - name: REF_DQ_TESTS
+  - name: REF_OBJECTS

@@ -1,22 +1,15 @@
 {%- set yaml_metadata -%}
-source_model:
-  BK: PRODUCT
+source_model: ref_objects
 derived_columns:
-  RECORD_SOURCE: '!STG_PRODUCT'
+  RECORD_SOURCE: '!STG_REF_OBJECTS'
   LOAD_DATETIME: CURRENT_TIMESTAMP()
 hashed_columns:
-  PRODUCT_HK: PRODUCT_ID
-  SAT_BK_PRODUCT_HASHDIFF:
+  SAT_DQL_REF_OBJECTS_HASHDIFF:
     is_hashdiff: true
     columns:
-      - PRODUCT_CODE
-      - PRODUCT_NAME
-      - PRODUCT_FAMILY
-      - DEFAULT_CURRENCY
-  CURRENCY_HK: DEFAULT_CURRENCY
-  LNK_PRODUCT_CURRENCY_HK:
-    - PRODUCT_ID
-    - DEFAULT_CURRENCY
+      - SCHEMA_NAME
+      - OBJECT_TYPE
+  REFOBJECTS_HK: REFOBJECTS_BK
 {%- endset -%}
 
 {% set metadata_dict = fromyaml(yaml_metadata) %}

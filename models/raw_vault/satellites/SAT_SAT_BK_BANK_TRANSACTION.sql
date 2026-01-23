@@ -1,5 +1,5 @@
-{%- set source_model = "stg_bank_transaction" -%}
-{%- set src_pk = "BANKTRANSACTION_HK" -%}
+{%- set source_model = "stg_bk_bank_transaction" -%}
+{%- set src_pk = "bk_bank_transaction_HK" -%}
 {%- set src_payload = ["TRANSACTION_REF", "ACCOUNT_ID", "BOOKING_TS",
                        "VALUE_DATE", "AMOUNT", "CURRENCY_CODE",
                        "DIRECTION", "DESCRIPTION", "MERCHANT_CATEGORY",

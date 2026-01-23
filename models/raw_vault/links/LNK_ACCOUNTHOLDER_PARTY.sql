@@ -1,6 +1,6 @@
 {%- set source_model = "stg_account_holder" -%}
 {%- set src_pk = "LNK_ACCOUNTHOLDER_PARTY_HK" -%}
-{%- set src_fk = ["ACCOUNTHOLDER_HK", "PARTY_HK"] -%}
+{%- set src_fk = ["accountholder_HK", "party_HK"] -%}
 {%- set src_ldts = "LOAD_DATETIME" -%}
 {%- set src_source = "RECORD_SOURCE" -%}
 

@@ -1,5 +1,5 @@
-{%- set source_model = "stg_currency" -%}
-{%- set src_pk = "CURRENCY_HK" -%}
+{%- set source_model = "stg_bk_currency" -%}
+{%- set src_pk = "bk_currency_HK" -%}
 {%- set src_payload = ["CURRENCY_NAME"] -%}
 {%- set src_hashdiff = "SAT_BK_CURRENCY_HASHDIFF" -%}
 {%- set src_ldts = "LOAD_DATETIME" -%}

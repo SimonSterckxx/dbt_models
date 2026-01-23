@@ -1,5 +1,5 @@
-{%- set source_model = "stg_account_holder" -%}
-{%- set src_pk = "ACCOUNTHOLDER_HK" -%}
+{%- set source_model = "stg_bk_account_holder" -%}
+{%- set src_pk = "bk_account_holder_HK" -%}
 {%- set src_payload = ["ACCOUNT_NUMBER", "IBAN", "ACCOUNT_TYPE",
                        "STATUS", "OPEN_DATE", "CLOSE_DATE",
                        "CURRENCY_CODE", "PRODUCT_ID", "BRANCH_ID",

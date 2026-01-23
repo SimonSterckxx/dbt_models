@@ -1,26 +1,15 @@
 {%- set yaml_metadata -%}
-source_model:
-  BK: PARTY_ADDRESS
+source_model: ref_dq_tests
 derived_columns:
-  RECORD_SOURCE: '!STG_PARTY_ADDRESS'
+  RECORD_SOURCE: '!STG_REF_DQ_TESTS'
   LOAD_DATETIME: CURRENT_TIMESTAMP()
 hashed_columns:
-  PARTYADDRESS_HK: PARTY_ADDRESS_ID
-  SAT_BK_PARTY_ADDRESS_HASHDIFF:
+  SAT_DQL_REF_DQ_TESTS_HASHDIFF:
     is_hashdiff: true
     columns:
-      - PARTY_NUMBER
-      - PARTY_TYPE
-      - FULL_NAME
-      - DATE_OF_BIRTH
-      - EMAIL
-      - PHONE
-      - CREATED_AT
-      - UPDATED_AT
-  PARTY_HK: PARTY_TYPE
-  LNK_PARTYADDRESS_PARTY_HK:
-    - PARTY_ADDRESS_ID
-    - PARTY_TYPE
+      - TEST_NAME
+      - TEST_QUERY
+  REFDQTESTS_HK: REFDQTESTS_BK
 {%- endset -%}
 
 {% set metadata_dict = fromyaml(yaml_metadata) %}

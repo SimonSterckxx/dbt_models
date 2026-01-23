@@ -1,5 +1,5 @@
-{%- set source_model = "stg_product" -%}
-{%- set src_pk = "PRODUCT_HK" -%}
+{%- set source_model = "stg_bk_product" -%}
+{%- set src_pk = "bk_product_HK" -%}
 {%- set src_payload = ["PRODUCT_CODE", "PRODUCT_NAME", "PRODUCT_FAMILY",
                        "DEFAULT_CURRENCY"] -%}
 {%- set src_hashdiff = "SAT_BK_PRODUCT_HASHDIFF" -%}

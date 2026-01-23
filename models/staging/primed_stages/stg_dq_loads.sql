@@ -1,15 +1,20 @@
 {%- set yaml_metadata -%}
-source_model:
-  BK: CURRENCY
+source_model: dq_loads
 derived_columns:
-  RECORD_SOURCE: '!STG_CURRENCY'
+  RECORD_SOURCE: '!STG_DQ_LOADS'
   LOAD_DATETIME: CURRENT_TIMESTAMP()
 hashed_columns:
-  CURRENCY_HK: CURRENCY_CODE
-  SAT_BK_CURRENCY_HASHDIFF:
+  SAT_DQL_DQ_LOADS_HASHDIFF:
     is_hashdiff: true
     columns:
-      - CURRENCY_NAME
+      - STARTED_AT
+      - ENDED_AT
+  DQLOADS_HK: DQLOADS_BK
+  LNK_DQTESTRUNS_DQLOADS_HK:
+    - dqtestruns_HK
+    - dqloads_HK
+  dqtestruns_HK: ''
+  dqloads_HK: dqloads_BK
 {%- endset -%}
 
 {% set metadata_dict = fromyaml(yaml_metadata) %}
