@@ -1,15 +1,15 @@
 {%- set yaml_metadata -%}
-source_model: ref_dq_tests
+source_model:
+  BK: CURRENCY
 derived_columns:
-  RECORD_SOURCE: '!STG_REF_DQ_TESTS'
+  RECORD_SOURCE: '!STG_CURRENCY'
   LOAD_DATETIME: CURRENT_TIMESTAMP()
 hashed_columns:
-  SAT_DQL_REF_DQ_TESTS_HASHDIFF:
+  CURRENCY_HK: CURRENCY_CODE
+  SAT_BK_CURRENCY_HASHDIFF:
     is_hashdiff: true
     columns:
-      - TEST_NAME
-      - TEST_QUERY
-  REFDQTESTS_HK: REFDQTESTS_BK
+      - CURRENCY_NAME
 {%- endset -%}
 
 {% set metadata_dict = fromyaml(yaml_metadata) %}

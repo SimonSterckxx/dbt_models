@@ -1,5 +1,5 @@
-{%- set source_model = "stg_bk_party" -%}
-{%- set src_pk = "bk_party_HK" -%}
+{%- set source_model = "stg_party" -%}
+{%- set src_pk = "PARTY_HK" -%}
 {%- set src_payload = ["PARTY_NUMBER", "PARTY_TYPE", "FULL_NAME",
                        "DATE_OF_BIRTH", "EMAIL", "PHONE",
                        "CREATED_AT", "UPDATED_AT"] -%}

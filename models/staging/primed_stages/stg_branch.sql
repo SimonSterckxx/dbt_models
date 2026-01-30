@@ -1,20 +1,18 @@
 {%- set yaml_metadata -%}
-source_model: dq_loads
+source_model:
+  BK: BRANCH
 derived_columns:
-  RECORD_SOURCE: '!STG_DQ_LOADS'
+  RECORD_SOURCE: '!STG_BRANCH'
   LOAD_DATETIME: CURRENT_TIMESTAMP()
 hashed_columns:
-  SAT_DQL_DQ_LOADS_HASHDIFF:
+  BRANCH_HK: BRANCH_ID
+  SAT_BK_BRANCH_HASHDIFF:
     is_hashdiff: true
     columns:
-      - STARTED_AT
-      - ENDED_AT
-  DQLOADS_HK: DQLOADS_BK
-  LNK_DQTESTRUNS_DQLOADS_HK:
-    - dqtestruns_HK
-    - dqloads_HK
-  dqtestruns_HK: ''
-  dqloads_HK: dqloads_BK
+      - BRANCH_CODE
+      - BRANCH_NAME
+      - COUNTRY_CODE
+      - CITY
 {%- endset -%}
 
 {% set metadata_dict = fromyaml(yaml_metadata) %}

@@ -1,5 +1,5 @@
-{%- set source_model = "stg_bk_branch" -%}
-{%- set src_pk = "bk_branch_HK" -%}
+{%- set source_model = "stg_branch" -%}
+{%- set src_pk = "BRANCH_HK" -%}
 {%- set src_payload = ["BRANCH_CODE", "BRANCH_NAME", "COUNTRY_CODE",
                        "CITY"] -%}
 {%- set src_hashdiff = "SAT_BK_BRANCH_HASHDIFF" -%}

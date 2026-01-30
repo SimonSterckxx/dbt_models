@@ -1,6 +1,6 @@
 {%- set source_model = "stg_bank_transaction" -%}
 {%- set src_pk = "LNK_BANKTRANSACTION_CURRENCY_HK" -%}
-{%- set src_fk = ["banktransaction_HK", "currency_HK"] -%}
+{%- set src_fk = ["BANKTRANSACTION_HK", "CURRENCY_HK"] -%}
 {%- set src_ldts = "LOAD_DATETIME" -%}
 {%- set src_source = "RECORD_SOURCE" -%}
 

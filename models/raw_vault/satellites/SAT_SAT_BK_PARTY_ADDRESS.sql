@@ -1,8 +1,9 @@
-{%- set source_model = "stg_bk_party_address" -%}
-{%- set src_pk = "bk_party_address_HK" -%}
-{%- set src_payload = ["PARTY_NUMBER", "PARTY_TYPE", "FULL_NAME",
-                       "DATE_OF_BIRTH", "EMAIL", "PHONE",
-                       "CREATED_AT", "UPDATED_AT"] -%}
+{%- set source_model = "stg_party_address" -%}
+{%- set src_pk = "PARTYADDRESS_HK" -%}
+{%- set src_payload = ["PARTY_ID", "ADDRESS_TYPE", "STREET",
+                       "HOUSE_NUMBER", "POSTAL_CODE", "CITY",
+                       "REGION", "COUNTRY_CODE", "VALID_FROM",
+                       "VALID_TO"] -%}
 {%- set src_hashdiff = "SAT_BK_PARTY_ADDRESS_HASHDIFF" -%}
 {%- set src_ldts = "LOAD_DATETIME" -%}
 {%- set src_source = "RECORD_SOURCE" -%}

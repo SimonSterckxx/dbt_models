@@ -1,6 +1,6 @@
 {%- set source_model = "stg_product" -%}
 {%- set src_pk = "LNK_PRODUCT_CURRENCY_HK" -%}
-{%- set src_fk = ["product_HK", "currency_HK"] -%}
+{%- set src_fk = ["PRODUCT_HK", "CURRENCY_HK"] -%}
 {%- set src_ldts = "LOAD_DATETIME" -%}
 {%- set src_source = "RECORD_SOURCE" -%}
 
